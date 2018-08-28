@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+:root {
+    --black: #272727;
+  }
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 10px;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "menu content";
+    grid-template-columns: minmax(200px, 1fr) 3fr;
+    height: 100vh;
+}
+
+.header_main {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.header_secondary {
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.main{
+    position: relative;
+    background-image: url(./toronto_outline_animated.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    padding-bottom: calc(100% * 3/4);
+    width: 100%;
+}
+
+.main svg {
+    position: absolute;
+}
