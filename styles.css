@@ -13,7 +13,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-areas: "menu content";
-    grid-template-columns: minmax(200px, 1fr) 3fr;
+    grid-template-columns:1fr 6fr;
     height: 100vh;
 }
 
@@ -24,12 +24,12 @@ body {
 
 .menu ul {
     list-style: none;
+    padding: 0;
 }
 
 .menu a {
     display: block;
     text-decoration: none;
-    text-align: center;
   }
 
 .header_main {
@@ -42,16 +42,32 @@ body {
     font-size: 2em;
 }
 
-.main{
-    position: relative;
+.main {
     background-image: url(./toronto_outline_animated.svg);
-    background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
     padding-bottom: calc(100% * 3/4);
     width: 100%;
 }
 
-.main svg {
-    position: absolute;
+
+.cv_main {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "categories dates";
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+
+    /* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
+}
+
+.cv_contents {
+    grid-area: categories;
+}
+
+.cv_dates {
+    grid-area: dates;
+}
+
+ul li {
+    font-size: 1.5em;
 }

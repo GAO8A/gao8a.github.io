@@ -1,9 +1,15 @@
 <svg id="Layer_1" 
     data-name="Layer 1" 
     xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 1201 899.06">
+    viewBox="0 0 1201 899.06"
+    preserveAspectRatio="xMidYMid meet">
     <defs>
-    <style>.cls-1{fill:#fff;stroke:#231f20;stroke-miterlimit:10}</style>
+    <style>.cls-1{
+    stroke-opacity: 0.5;
+    fill: #fff;
+    stroke: #231f20;
+    stroke-miterlimit: 10;
+    }</style>
     </defs>
     <title>toronto_outline</title>
     <path class="cls-1 ONfCnHMJ_0" 
