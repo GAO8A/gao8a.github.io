@@ -71,3 +71,14 @@ body {
 ul li {
     font-size: 1.5em;
 }
+
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    .wrapper {
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 6fr;
+    }
+  }
+  
