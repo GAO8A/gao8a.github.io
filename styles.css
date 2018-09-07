@@ -19,7 +19,7 @@ body {
 
 .menu {
     grid-template-rows: 1fr 1fr 3fr;
-    grid-template-areas: "header1 header2 list";
+    grid-template-areas: "header1" " header2" " list";
 }
 
 .menu ul {
@@ -93,7 +93,7 @@ ul li {
     } */
   
     [aria-controls="menu-list"] {
-      display: block;
+      display: inline-block;
       margin-bottom: 10px;
     }
     
@@ -103,9 +103,13 @@ ul li {
       transform: rotateX(90deg);
       transition: all 0.5s;
     }
+
+    ul > li {
+        display: inline-block;
+        text-align: center;  
+    }
   
     [aria-expanded="true"] ~ ul {
-      display: grid;
       max-height: 500px;
       transform: rotateX(0deg);
     }
