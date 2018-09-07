@@ -13,6 +13,11 @@
 <body>
     <div class="wrapper">
         <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">☰</span>
+                <span class="close">×</span>
+                Menu
+              </button>
                 <h1 class="header_main">rick gao</h1>
                 <h2 class="header_secondary">UI Dev</h2>
                 <ul id="menu-list">
@@ -32,6 +37,18 @@
 
         </div>
     </div>
+    <script>
+
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({target}) {
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          navButton.setAttribute('aria-expanded', !expanded);
+    
+          console.log(expanded);
+        }
+    
+        navButton.addEventListener('click', toggleNav);
+      </script>
 </body>
 
 </html>
