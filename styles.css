@@ -3,6 +3,7 @@
 :root {
     --black: #272727;
     --bg: #f8f8f8;
+    --margin: 2em;
   }
 
 body {
@@ -23,7 +24,7 @@ body {
     display: grid;
     grid-template-rows: repeat(auto-fill,  minmax(100px, 1fr));
     grid-template-areas: "header1" " header2" "links" "social";
-    margin: 2em;
+    margin: var(--margin);
 }
 
 .menu ul {
@@ -72,7 +73,7 @@ body {
 }
 
 .main_text {
-    margin: 2em;
+    margin: var(--margin);
 }
 
 .main_text p {
@@ -80,7 +81,7 @@ body {
 }
 
 .main_cv {
-    margin: 2em;
+    margin: var(--margin);
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-template-areas: "categories dates";
@@ -150,34 +151,20 @@ ul li {
         justify-items: start;
     }
 
-  
-    [aria-controls="menu-list"] {
-      display: inline-block;
-      margin-bottom: 10px;
+    .main_cv {
+        margin: var(--margin);
     }
 
-    /* ul > li {
-        display: inline-block;
-        text-align: center;  
-    } */
-
-    .main_cv{
-        margin: 2em;
-    }
-
-    .main_content{
-        margin: 2em;
+    .main_content {
+        margin: var(--margin);
     }
 
     .main_text {
-        margin: 2em;
+        margin: var(--margin);
     }
   }
 
 @media (max-width: 500px) {
-    /* .menu {
-        grid-template-columns: repeat(2, auto);
-    } */
     .page-links {
         display: grid;
         grid-area: links;
