@@ -6,48 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
-    <title>gao8a</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+    crossorigin="anonymous">
+    <title>rickgao</title>
 </head>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 <body>
     <div class="wrapper">
-        <nav class="menu">
-            <button aria-expanded="false" aria-controls="menu-list">
-                <span class="open">☰</span>
-                <span class="close">×</span>
-            </button>
-            <h1 class="header_main"><a href="./index.html">rick gao</a></h1>
-            <h2 class="header_secondary">UI Dev</h2>
-            <ul id="menu-list">
-                <li>
-                    <a href="./about.html">About Me</a>
-                </li>
-                <li>
-                    <a href="./cv.html">CV</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="main_about">
-            <h2>Hello</h2>
-            <p> My name is Rick Gao. I'm a developer based in Toronto Ontario.</p>
+            <nav class="menu">
+                    <span class="headers">
+                        <h1 class="header_main"><a href="./index.html">rick gao</a></h1>
+                        <h2 class="header_secondary">> web dev</h2>
+                    </span>
+                    <ul class="page-links">
+                      <li>
+                        <a href="./about.html">About</a>
+                      </li>
+                      <li>
+                        <a href="./cv.html">CV</a>
+                      </li>
+                      <li class="end">
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    <ul class="social-links">
+                      <li class="social-link">
+                        <a href="https://github.com/GAO8A">
+                          <i class="fab fa-github" title="Github Profile"></i>
+                        </a>
+                      </li>
+                      <li class="social-link">
+                        <a href="https://codepen.io/rickgao/">
+                          <i class="fab fa-codepen" title="Codepen Profile"></i>
+                        </a>
+                      </li>
+                      <li class="social-link">
+                        <a href="https://medium.com/@rickgao">
+                          <i class="fab fa-medium-m" title="Medium Profile"></i>
+                        </a>
+                      </li>
+                      <li class="social-link end">
+                        <a href="https://www.linkedin.com/in/richard-gao-a38a773a/">
+                          <i class="fab fa-linkedin" title="LinkedIn Profile"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+        <div class="main_text">
+          <h1>hello</h1>
+            <p> my name is Rick Gao.</p>
+                <ul>
+                    <li>developer based in Toronto</li>
+                    <li>likes data viz, web mapping</li>
+                    <li>background in the earth sciences</li>
+                    <li>ex-sapper in the Canadian Forces</li>
+                    <li>long distance runner</li>
+                    <li>loves the outdoors</li> 
+                </ul>
+            <p>thanks</p>
         </div>
     </div>
-    <script>
-
-        const navButton = document.querySelector('button[aria-expanded]');
-        function toggleNav({ target }) {
-            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-            navButton.setAttribute('aria-expanded', !expanded);
-
-            console.log(expanded);
-        }
-
-        navButton.addEventListener('click', toggleNav);
-    </script>
 </body>
 
 </html>
