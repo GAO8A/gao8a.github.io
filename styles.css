@@ -196,7 +196,8 @@ ul li {
 
 @media (max-width: 500px) {
     /* prevent horizontal scroll, becsue of text transfrom */
-    body {
+    html, body { 
+        position: relative;
         max-width: 100%;
         overflow-x: hidden;
     }
