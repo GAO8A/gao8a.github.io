@@ -114,6 +114,7 @@ body {
     display: grid;
     font-size: 1.5em;
     place-items: center;
+    grid-auto-flow: dense;
 }
 
 .education {
@@ -194,6 +195,11 @@ ul li {
   }
 
 @media (max-width: 500px) {
+    /* prevent horizontal scroll, becsue of text transfrom */
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .page-links {
         display: grid;
         grid-area: links;
