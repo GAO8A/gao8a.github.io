@@ -92,6 +92,10 @@ body {
 
 }
 
+.url_link {
+    color: var(--black);
+}
+
 .skills {
     grid-area: skills;
 }
@@ -176,6 +180,7 @@ ul li {
         grid-template-columns: repeat(4, auto);
         justify-items: start;
     }
+
 
     .main_cv {
         margin: var(--margin);
